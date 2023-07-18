@@ -32,7 +32,7 @@ public class KafkaConsumerConfig {
     }
 
     public Map<String, Object> consumerProps() {
-        String bootstrapAddress = "localhost:9092";
+        String bootstrapAddress = "pkc-p11xm.us-east-1.aws.confluent.cloud:9092";
         Map<String, Object> props = new HashMap<>();
         props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapAddress);
         props.put(ConsumerConfig.GROUP_ID_CONFIG, "group-order-notification");
